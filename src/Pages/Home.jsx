@@ -3,6 +3,7 @@ import Hero from '../Components/Hero'
 import Navbar from '../Components/Navbar'
 import Floating from '../Components/Floating'
 import Members from '../Components/Members'
+import Footer from '../Components/Footer'
 
 export default function App() {
   return (
@@ -25,6 +26,7 @@ export default function App() {
       <Hero/>
       <Floating/>
       <Members/>
+      <Footer/>
     </div>
   )
 }

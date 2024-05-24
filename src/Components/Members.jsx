@@ -19,7 +19,7 @@ export default function Members() {
         loadData();
       }, []);
   return (
-    <div>
+    <div className='pb-40' >
         <h1 className='text-5xl flex justify-center text-center text-white py-10  ' >Members of Governning Council</h1>
          {members != []
           ? members.map((data) => {
@@ -32,7 +32,6 @@ export default function Members() {
                     <NewCard name = {data.name} post = {data.post} posting = {data.posting} />
                     <NewCard name = {data.name} post = {data.post} posting = {data.posting} />
                     <NewCard name = {data.name} post = {data.post} posting = {data.posting} />
-
                 </div>
               );
             })
