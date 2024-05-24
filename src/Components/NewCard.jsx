@@ -40,7 +40,7 @@ export default function NewCard(props) {
   };
 
   return (
-    <div className='rounded-3xl ease-in-out duration-5t00 hover:shadow-2xl '   >  
+    <div className='rounded-3xl ease-in-out duration-500 hover:shadow-2xl '   >  
         <Card sx={{ maxWidth: 345, bgcolor:"transparent" , borderRadius:"10px" , border:"2px solid white" }} className='p-5' >
       <CardHeader
         title={props.name}
