@@ -50,7 +50,7 @@ export default function NewCard(props) {
       <CardMedia
         component="img"
         height="194"
-        image={ramdev}
+        image={props.image}
         alt="ramdev"
         className='rounded-full'
       />
@@ -74,3 +74,5 @@ export default function NewCard(props) {
     </div>
   );
 }
+
+
