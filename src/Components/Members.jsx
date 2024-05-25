@@ -24,14 +24,70 @@ export default function Members() {
          {members != []
           ? members.map((data) => {
               return (
-                <div className='px-20 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8' >
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image} email={data.email} address={data.address} />
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image} email={data.email} address={data.address} />
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image} email={data.email} address={data.address} />
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image}  email={data.email} address={data.address} />
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image} email={data.email} address={data.address} />
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image} email={data.email} address={data.address}/>
-                    <NewCard name = {data.name} post = {data.post} posting = {data.posting} image={data.image} email={data.email} address={data.address}/>
+                <div className="px-20 mt-6 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
+                  <NewCard
+                    name={data.name}
+                    post={data.post}
+                    posting={data.posting}
+                    image={data.image}
+                    email={data.email}
+                    address={data.address}
+                    desc={data.desc}
+                  />
                 </div>
               );
             })
