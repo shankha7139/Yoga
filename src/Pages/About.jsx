@@ -2,9 +2,12 @@ import React, { useEffect, useState } from 'react';
 import Navbar from '../Components/Navbar';
 import AboutBg from '../assets/AboutBg.svg';
 import Footer from "../Components/Footer";
+import { useLocation } from 'react-router-dom';
 
 export default function About() {
   const [members, setMembers] = useState([]);
+  const location = useLocation()
+  const {name , post , posting , email ,address} = location.state.props
 
   const loadData = async () => {
     let response = await fetch("http://localhost:8008/api/members", {
@@ -33,7 +36,7 @@ export default function About() {
       <div className="relative w-full">
         <img src={AboutBg} alt="About Background" className="w-full" />
         <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 text-yellow-300 font-bold text-4xl">
-          Dj Bravo
+          {name}
         </div>
       </div>
       <div className="text-center py-10 mb-30 ">
@@ -48,15 +51,15 @@ export default function About() {
                   <h2 className="text-3xl font-bold mb-4">Profile Details</h2>
                   <div className="grid grid-cols-2 gap-y-4">
                     <p className="text-xl font-bold text-yellow-500">Name:</p>
-                    <p className="text-xl font-bold text-yellow-500">{member.name}</p>
+                    <p className="text-xl font-bold text-yellow-500">{name}</p>
                     <p className="text-xl font-bold text-blue-500">Posting:</p>
-                    <p className="text-xl font-bold text-blue-500">{member.posting}</p>
+                    <p className="text-xl font-bold text-blue-500">{posting}</p>
                     <p className="text-xl font-bold text-blue-500">Post:</p>
-                    <p className="text-xl font-bold text-blue-500">{member.post}</p>
+                    <p className="text-xl font-bold text-blue-500">{post}</p>
                     <p className="text-xl font-bold text-gray-500">Email:</p>
-                    <p className="text-xl font-bold text-gray-500">{member.email}</p>
+                    <p className="text-xl font-bold text-gray-500">{email}</p>
                     <p className="text-xl font-bold text-gray-500">Address:</p>
-                    <p className="text-xl font-bold text-gray-500">{member.address}</p>
+                    <p className="text-xl font-bold text-gray-500">{address}</p>
                   </div>
                 </div>
               </div>
