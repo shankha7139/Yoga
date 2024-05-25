@@ -61,7 +61,7 @@ export default function About() {
           <h1 className="text-2xl py-10 text-[#ff5239] font-bold font-mono ">
             Description
           </h1>
-          <p className="justify-center px-10 md:px-6 sm:px-4 ">{desc}</p>
+          <p className="justify-center px-10 md:px-6 sm:px-4 text-justify ">{desc}</p>
         </div>
       </div>
       <Footer />
